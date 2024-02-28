@@ -97,7 +97,7 @@ hr{
   background-color: red;
   height: 5vmax;
   color: white;
-  margin: 0 1vmax;
+  margin: 0 1vmax 1vmax 1vmax;
   font-size: 1.1vmax;
 }
 .footer div{
