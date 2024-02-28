@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fffef8, #FFFABE);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  width: 100%;
+  height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vmin;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo img{
+  width: 45vmax;
+}
+.content{
+  display: flex;
+  padding-right: 20px;
+}
+.content img{
+  width: 33% ;
+}
+.content .descp{
+  width: 67%;
+}
+.descp img{
+  width: 93%;
+}
+.descp h3{
+  font-weight: 700;
+  font-size: 1.4vmax;
+}
+.descp ul{
+  font-size: 1.2vmax;
+  margin: 1vmax 0;
+}
+.descp p{
+  font-size: 1.2vmax;
+}
+.App>p{
+  margin-top: 3vmax;
+  padding-left: 1vmax;
+  text-align: start;
+  font-size: 1.1vmax;
+}
+.pumps-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2vmax;
+}
+.pumps-sec img{
+  width: 80%;
+}
+hr{
+  margin: 0 1vmax;
+  height: 0.19vmin;
+  border: 0;
+  background-color: red;
+}
+.services{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0 3vmax 2vmax 3vmax;
+  
+}
+.services>div{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ver_line{
+  position: relative;
+  z-index: 1;
+  margin: 0 0.5vmax;
+  border-left: 0.13vmax solid red;
+}
+.services span{
+  font-size: 1.1vmax;
+}
+.services h3{
+  font-size: 1.3vmax;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  height: 5vmax;
+  color: white;
+  margin: 0 1vmax;
+  font-size: 1.1vmax;
+}
+.footer div{
+  display: flex;
+}
+.footer a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.footer div svg{
+  width: 1.5vmax;
+  height: 1.5vmax;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width : 600px) {
+  .content{
+      display: flex;
+      padding: 0;
+      width: 100%;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .content img{
+      width: 33% ;
+  }
+  .content .descp{
+      width: 80%;
+  }
+  .descp img{
+      width: 100%;
+  }
+  .descp h3{
+      font-size: 1.7vmax;
+  }
+  .descp ul{
+      font-size: 1.6vmax;
+      margin: 1.5vmax;
+      padding-left: 0;
+  }
+  .descp p{
+      font-size: 1.6vmax;
+      text-align: center;
+  }
+  .App>p {
+      margin-top: 3vmax;
+      text-align: center;
+      font-size: 1.3vmax;
   }
 }
